@@ -1,0 +1,9 @@
+---
+- name: this Play will demonstrate the use of ping module
+  hosts: all
+  tasks:
+   - name: ping the Remote Machine
+     ping:
+
+
+...

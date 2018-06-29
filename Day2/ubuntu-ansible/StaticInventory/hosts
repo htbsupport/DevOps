@@ -1,0 +1,9 @@
+#[all]
+container1 ansible_user=root ansible_host=localhost ansible_port=2000 ansible_private_key_file=/root/.ssh/id_rsa
+container2 ansible_user=root ansible_host=localhost ansible_port=2001 ansible_private_key_file=/root/.ssh/id_rsa
+
+[dev]
+container1
+
+[se]
+container2

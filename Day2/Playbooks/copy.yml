@@ -1,0 +1,8 @@
+---
+ - name: Copy this
+   hosts: all
+   tasks:
+
+   - name: Copy this file to copy2
+     cp:
+...

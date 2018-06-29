@@ -1,0 +1,15 @@
+- name: Demo Dictionery
+  hosts: localhost
+  vars:
+   - contacts:
+       Sriram:
+         name: Sriram Deshmukh
+         mobile: 246-468-9500
+       Nitesh:
+         name: Nitesh R
+         mobile: 555-567-99852
+
+  tasks:
+    - name: Print all contacts
+      debug: msg="Mobile number of {{item.key}} is {{item.value.mobile}}."
+      with_dict: "{{contacts}}"

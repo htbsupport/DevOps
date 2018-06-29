@@ -1,0 +1,19 @@
+---
+- name: Installs, Configures and Deploys web page in nginx web server
+  hosts: all
+  vars_files:
+      - custom_variables 
+  tasks: 
+  - include: install.yml
+  - include: configure.yml
+  - include: configure_webroot.yml
+  - include: deploy.yml
+
+  handlers:
+   - name: restart nginx web server
+     service: name=nginx state=restarted
+...
+
+
+
+

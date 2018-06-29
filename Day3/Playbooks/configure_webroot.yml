@@ -1,0 +1,5 @@
+  - name: Create the web Root folder
+    file: path=/var/html state=directory mode=777
+
+
+

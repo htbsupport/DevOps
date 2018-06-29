@@ -1,0 +1,4 @@
+- name: This is a playbook
+  host: all 
+   - name: Install vim
+     apt: name=vim state=latest update_cache
